@@ -2,11 +2,11 @@ window.addEventListener("load", drawScreen, false);
 window.addEventListener("keydown", onkeydown, true);
 
 var imgBackground = new Image();
-imgBackground.src = "img/background.png";
+imgBackground.src = "background.png";
 imgBackground.addEventListener("load", drawScreen, false);
 
 var imgPlayer = new Image();
-imgPlayer.src = "img/player.png";
+imgPlayer.src = "player.png";
 imgPlayer.addEventListener("load", drawScreen, false);
 
 var intPlayerX = 350;
