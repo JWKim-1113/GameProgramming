@@ -83,28 +83,33 @@ function onkeydown(e)
         intPlayerX-=5;
         if( intPlayerX < 0 )
         {
-          intPlayerX = 0;
+          GameState = GAME_STATE_OVER;
+          intPlayerX = 330;
         }
       break;
       case 39: // RIGHT
         intPlayerX+=5;
         if( intPlayerX > 740 )
         {
-          intPlayerX = 740;
+          
+          GameState = GAME_STATE_OVER;
+          intPlayerX = 330;
         }     
       break;
       case 38: // UP
         intPlayerY-=5;
         if( intPlayerY < 0 )
         {
-          intPlayerY = 0;
+          GameState = GAME_STATE_OVER;
+          intPlayerY = 220;
         }
       break;
       case 40: // DOWN
         intPlayerY+=5;
         if( intPlayerY > 540 )
         {
-          intPlayerY = 540;
+          GameState = GAME_STATE_OVER;
+          intPlayerY = 220;
         } 
       break;
     };
@@ -116,7 +121,7 @@ function onkeydown(e)
     if( e.keyCode == 13 )
     {
       // 엔터를 입력하면 준비 상태로
-      onReady();
+      GameState = GAME_STATE_READY;
     }
   }
   
