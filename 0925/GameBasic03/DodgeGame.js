@@ -11,11 +11,11 @@ var GameState = GAME_STATE_READY; // 초깃값은 준비 상태
 var intervalID;
 
 var imgBackground = new Image();
-imgBackground.src = "img/Background.png";
+imgBackground.src = "background.png";
 imgBackground.addEventListener("load", drawScreen, false);
 
 var imgPlayer = new Image();
-imgPlayer.src = "img/player.png";
+imgPlayer.src = "player.png";
 imgPlayer.addEventListener("load", drawScreen, false);
 
 
