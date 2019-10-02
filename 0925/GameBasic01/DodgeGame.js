@@ -1,7 +1,7 @@
 window.addEventListener("load", drawScreen, false);
 
 var imgBackground = new Image();
-imgBackground.src = "background.png";
+imgBackground.src = "img/background.png";
 imgBackground.addEventListener("load", drawScreen, false);
 
 var imgPlayer = new Image();
